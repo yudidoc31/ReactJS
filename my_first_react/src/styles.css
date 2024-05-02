@@ -1,65 +1,71 @@
 .container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
-}
-
-.search-form {
-  margin-bottom: 20px;
-  display: flex;
-}
-
-.search-form input[type="text"] {
-  flex: 1; /* Mengurangi lebar input agar lebih mirip dengan YouTube */
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 0;
-}
-
-.search-form button {
-  padding: 10px;
-  font-size: 16px;
-  color: #fff;
-  background-color: #007bff;
-  border: 1px solid #007bff; /* Menggunakan border agar tombol lebih mirip dengan YouTube */
-  border-radius: 0;
-  cursor: pointer;
-}
-
-.video-container {
-  display: grid; /* Menggunakan CSS Grid untuk menyusun video */
-  grid-template-columns: 70% 30%; /* Bagian kiri untuk video besar, bagian kanan untuk daftar video kecil */
-  gap:200px; /* Jarak antara video */
-}
-
-.selected-video {
-  width: 120%;
-}
-
-.selected-video iframe {
-  width: 100%;
-  height: 500px;
-  border: none;
-}
-
-.video-item img {
-  width: 100%;
-  height: auto;
-}
-
-.video-info {
-  padding: 10px; /* Memberikan padding di sekitar info video */
-}
-
-.video-info h2 {
-  margin: 0;
-  font-size: 16px;
-  color: #333;
-}
-
-.video-info p {
-  margin: 2px 0 0;
-  font-size: 14px;
-  color: #666;
-}
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .search-form {
+    margin-bottom: 20px;
+    display: flex;
+  }
+  
+  .search-form input[type="text"] {
+    flex: 1; /* Mengurangi lebar input agar lebih mirip dengan YouTube */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+  }
+  
+  .search-form button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: 1px solid #007bff; /* Menggunakan border agar tombol lebih mirip dengan YouTube */
+    border-radius: 0;
+    cursor: pointer;
+  }
+  
+  .video-container {
+    display: grid; /* Menggunakan CSS Grid untuk menyusun video */
+    grid-template-columns: 55% 45%; /* Bagian kiri untuk video besar, bagian kanan untuk daftar video kecil */
+    gap:200px; /* Jarak antara video */
+  }
+  
+  .selected-video {
+    width: 130%;
+  }
+  
+  .selected-video iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+  }
+  
+  .video-item {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+  
+  .video-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .video-info {
+    padding: 20px; /* Memberikan padding di sekitar info video */
+  }
+  
+  .video-info h2 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .video-info p {
+    margin: 2px 0 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
